@@ -24,7 +24,7 @@
 * [常见问题](chang_jian_wen_ti.md)
 * API参考手册
    * 简介
-   * API
+   * [API](api.md)
    * 数据类型
    * 错误码
    * HTTP协议
