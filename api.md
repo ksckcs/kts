@@ -13,4 +13,30 @@ message CreateTableRequest {
 }
 ```
 
+* Request参数
+
+* table_name
+
+说明：表名。<br>
+类型：String。<br>
+长度限制：[3, 255]。<br>
+Required：是。<br>
+
+* primary_key
+
+说明：表的主键，由一个必需的partition key和一个可选的row key组成。<br>
+数组中第一个值为partition key，第二个为row key（可选）<br>
+类型：ColumnDescription的数组。
+长度限制：[1, 2]。<br>
+Required：是。<br>
+
+* provisioned_throughtput
+
+说明：代表预配置的读和写吞吐量，根据设计，能够不受限制地扩展。然而预
+配置吞吐量的初始大小是有一定限制的，详情见Table系统开发者文档。并且
+能够通过UpdateTable操作来修改。<br>
+类型：ProvisionedThroughput。<br>
+Required：是。<br>
+* Response协议
+
 
