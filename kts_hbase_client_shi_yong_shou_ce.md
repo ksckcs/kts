@@ -1,5 +1,6 @@
 ## KTS HBase Client 使用手册
 
+应用程序除了使用java client，还可以通过HBase client访问KTS。KTS HBase client是基于官方HBase client 1.1.2版本定制开发的，接口与官方HBase API完全一致，从而实现KTS与HBase的兼容。<br>
 虽然KTS HBase client是基于官方HBase client定制开发的，并且接口与官方HBase API完全一致，但是由于KTS不支持多版本以及数据过期失效(TTL)，因此，KTS HBase client和官方HBase client存在部分差异。
 
 **环境准备**
