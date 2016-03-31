@@ -16,7 +16,7 @@
    * [表管理](biao_guan_li.md)
    * [删除表](shan_chu_biao.md)
 * [购买指南](gou_mai_zhi_nan.md)
-   * 计量说明
+   * [计量说明](ji_liang_shuo_ming.md)
    * 计费详解
    * 价格总览
 * 最佳实践
