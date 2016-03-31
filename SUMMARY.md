@@ -8,7 +8,7 @@
    * [使用场景](shi_yong_chang_jing.md)
 * 产品详情
    * [数据模型](shu_ju_mo_xing.md)
-   * 支持的操作
+   * [支持的操作](zhi_chi_de_cao_zuo.md)
    * 预配置吞吐量
    * 访问KTS
 
