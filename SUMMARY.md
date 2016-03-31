@@ -13,6 +13,6 @@
    * [访问KTS](fang_wen_kts.md)
 * 控制台操作
    * [创建表](chuang_jian_biao.md)
-   * 表管理
+   * [表管理](biao_guan_li.md)
    * 删除表
 
