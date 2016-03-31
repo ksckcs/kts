@@ -23,7 +23,6 @@
 * 服务限制
 * [常见问题](chang_jian_wen_ti.md)
 * API参考手册
-   * 简介
    * [API](api.md)
    * [数据类型](shu_ju_lei_xing.md)
    * 错误码
