@@ -6,7 +6,7 @@
 1. 配置Java 7以上开发环境；
 2. 下载KTS Java Client：
  http://kingsoft-table-service.ks3-cn-beijing.ksyun.com/sdk/ksyun-kts-client-0.9.2.zip <br>或者添加Maven依赖：
-```
+```xml
 <dependency>
 <groupId>com.kingsoft.services.table</groupId>
 	<artifactId>kts-client</artifactId>
