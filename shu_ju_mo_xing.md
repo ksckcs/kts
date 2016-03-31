@@ -30,3 +30,4 @@ KTS的数据模型概念包括表、行、主键、属性列。在KTS中，表�
 **支持的数据类型**
 
 KTS目前仅支持标量数据类型：bool、int32、int64、double、string、binary。
+
