@@ -19,7 +19,7 @@
    * [计量说明](ji_liang_shuo_ming.md)
    * [计费详解](ji_fei_xiang_jie.md)
    * 价格总览
-* 最佳实践
+* [最佳实践](zui_jia_shi_jian.md)
 * 服务限制
 * 常见问题
 
