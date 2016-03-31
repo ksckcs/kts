@@ -18,9 +18,18 @@
 **获取密钥**
 
 1. 开通KTS服务；
-2. 获取AK/SK。进入控制台：http://ks3.ksyun.com/console.html#/，点击页面左侧”账号设置”，获取AccessKey、SecretKey。
+2. 获取AK/SK。进入控制台：http://ks3.ksyun.com/console.html#/， 点击页面左侧”账号设置”，获取AccessKey、SecretKey。
 
 **表操作**
 
 所有表操作都可以在控制台执行，HBase Client暂不支持。
+
+**数据操作**
+
+使用HBase Client进行数据操作一般遵循以下几个步骤：
+1. 创建Configuration对象，并设置hbase.client.connection.impl、kingsoft.services.table.endpoint、kingsoft.services.table.accessKey、kingsoft.services.table.secretKey；
+2. 根据Configuration参数创建Connection对象；
+3. 构造请求对象；
+4. 获取Table对象，调用Table对象相关接口发送请求。
+
 
