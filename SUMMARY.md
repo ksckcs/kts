@@ -29,6 +29,6 @@
    * 错误码
    * HTTP协议
 * SDK使用手册
-   * KTS Java Client使用手册
+   * [KTS Java Client使用手册](kts_java_clientshi_yong_shou_ce.md)
    * [KTS HBase Client 使用手册](kts_hbase_client_shi_yong_shou_ce.md)
 
