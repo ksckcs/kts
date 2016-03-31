@@ -1,2 +1,2 @@
-# KTS HBase Client 使用手册
+## KTS HBase Client 使用手册
 
