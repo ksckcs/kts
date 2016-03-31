@@ -10,5 +10,5 @@
    * [数据模型](shu_ju_mo_xing.md)
    * [支持的操作](zhi_chi_de_cao_zuo.md)
    * [预配置吞吐量](yu_pei_zhi_tun_tu_liang.md)
-   * 访问KTS
+   * [访问KTS](fang_wen_kts.md)
 
