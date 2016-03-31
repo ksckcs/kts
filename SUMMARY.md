@@ -11,7 +11,7 @@
    * [支持的操作](zhi_chi_de_cao_zuo.md)
    * [预配置吞吐量](yu_pei_zhi_tun_tu_liang.md)
    * [访问KTS](fang_wen_kts.md)
-* 控制台操作()
+* [控制台操作]()
    * [创建表]()
    * [表管理]()
    * 删除表
