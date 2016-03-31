@@ -6,7 +6,7 @@
 2. 下载KTS HBase client：
      http://kingsoft-table-service.ks3-cn-beijing.ksyun.com/sdk/ksyun-kts-hbase-client-0.9.2.zip<br>
 或者添加Maven依赖：
-```
+```xml
 <dependency>
 <groupId>com.kingsoft.services.table</groupId>
 <artifactId>kts-hbase-client</artifactId>
