@@ -14,5 +14,5 @@
 * 控制台操作
    * [创建表](chuang_jian_biao.md)
    * [表管理](biao_guan_li.md)
-   * 删除表
+   * [删除表](shan_chu_biao.md)
 
