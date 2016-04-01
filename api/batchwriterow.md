@@ -14,6 +14,7 @@ message BatchWriteRowRequest {
 ```
 
 **Request参数**
+
 * **table_name**<br>
 类型: string<br>
 描述: 该表的表名。<br>
@@ -26,45 +27,50 @@ message BatchWriteRowRequest {
 * **delete_rows**<br>
 类型: repeated DeleteRowInBatchWriteRowRequest<br>
 描述: 该表中请求删除的行信息。<br>
-	若put_rows、update_rows进而delete_rows中出现下情况都会返回整体错误:<br>
-任一行操作未指定主键、主键列名称不符合规范或者主键列类型不正确。<br>
-任一属性列名称不符合列名命名规范。<br>
-任一行操作存在与主键列同名的属性列。<br>
-任一主键列或者属性列的值大小超过上限。<br>
-任意两行主键完全相同。<br>
-行操作个数超过25个，或者其含有的总数据大小超过1M。<br>
-没有包含行操作,则返回 这个返回值不正确。<br>
-	Response协议
+若put_rows、update_rows进而delete_rows中出现下情况都会返回整体错误:<br>
+  * 任一行操作未指定主键、主键列名称不符合规范或者主键列类型不正确。<br>
+  * 任一属性列名称不符合列名命名规范。<br>
+  * 任一行操作存在与主键列同名的属性列。<br>
+  * 任一主键列或者属性列的值大小超过上限。<br>
+  * 任意两行主键完全相同。<br>
+  * 行操作个数超过25个，或者其含有的总数据大小超过1M。<br>
+  * 没有包含行操作,则返回 这个返回值不正确。<br>
+
+**Response协议**
+
+```
 message BatchWriteRowResponse {
-required string table_name;
-repeated RowInBatchWriteRowResponse put_rows;
-repeated RowInBatchWriteRowResponse update_rows;
+    required string table_name;
+    repeated RowInBatchWriteRowResponse put_rows;
+    repeated RowInBatchWriteRowResponse update_rows;
     repeated RowInBatchWriteRowResponse delete_rows;
 }
-	Response参数
-	table_name
-类型: string
-描述: 该表的表名
-	put_rows
-类型: RowInBatchWriteRowResponse
-描述: 该表中PutRow操作的结果
-	update_rows
-类型: RowInBatchWriteRowResponse
-描述: 该表中UpdateRow操作的结果
-	delete_rows
+```
+**Response参数**
+
+* **table_name**<br>
+类型: string<br>
+描述: 该表的表名<br>
+* **put_rows**<br>
+类型: RowInBatchWriteRowResponse<br>
+描述: 该表中PutRow操作的结果<br>
+* **update_rows**<br>
+类型: RowInBatchWriteRowResponse<br>
+描述: 该表中UpdateRow操作的结果<br>
+* **delete_rows**<br>
 类型: RowInBatchWriteRowResponse
 描述: 该表中DeleteRow操作的结果
-	Errors错误码
-	kInternalServerError
-Server端发生错误，Http Status Code：500。
-	kConditionalCheckFailedException
-请求condition参数不能满足，Http Status Code：400。
-	kProvisionedThroughputExceededException
+* **Errors错误码**<br>
+**kInternalServerError**<br>
+Server端发生错误，Http Status Code：500。<br>
+**kConditionalCheckFailedException**<br>
+请求condition参数不能满足，Http Status Code：400。<br>
+**kProvisionedThroughputExceededException**<br>
 请求量太大，超过预配置吞吐设置，SDK内部会自动负责重试，Http Status Code：
-400。
-	kResourceNotFoundException
-表不存在，或者表不是ACTIVE状态，Http Status Code: 400。
-	kAccessDeniedException
-请求未包含Authorization信息或者信息不正确，Http Status Code：400。
-	kThrottlingException
+400。<br>
+**kResourceNotFoundException**<br>
+表不存在，或者表不是ACTIVE状态，Http Status Code: 400。<br>
+**kAccessDeniedException**<br>
+请求未包含Authorization信息或者信息不正确，Http Status Code：400。<br>
+**kThrottlingException**<br>
 服务器繁忙，无法响应请求，Http Status Code：400。
