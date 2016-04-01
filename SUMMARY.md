@@ -31,7 +31,7 @@
    * [ListTables](listtables.md)
    * [GetRow](getrow.md)
    * [PutRow](putrow.md)
-   * UpdateRow
+   * [UpdateRow](updaterow.md)
    * DeleteRow
    * BatchGetRow
    * BatchPutRow
