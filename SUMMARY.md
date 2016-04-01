@@ -35,7 +35,7 @@
    * [DeleteRow](deleterow.md)
    * [BatchGetRow](batchgetrow.md)
    * [BatchPutRow](batchputrow.md)
-   * Scan
+   * [Scan](scan.md)
    * [数据类型](shu_ju_lei_xing.md)
    * 错误码
    * HTTP协议
