@@ -23,6 +23,33 @@ Required：是。
 配置吞吐量的初始大小是有一定限制的，详情见Table系统开发者文档。<br>
 类型：ProvisionedThroughput<br>
 Required：是<br>
-Response协议
+
+**Response协议**
+```
+message UpdateTableResponse {
+    optional TableDescription table_description;
+}
+```
+**Response参数**
+
+* table_description
+
+说明：代表table的属性信息。<br>
+类型：TableDescription。<br>
+Required：否。
+* Errors错误码
+
+kInternalServerError<br>
+Server端发生错误，Http Status Code：500。
+kLimitExceededException<br>
+并发的table操作请求超限，Http Status Code：400。
+kResourceInUseException<br>
+table的并发访问冲突，比如更新CREATING或者UPDATING状态的table，Http 
+Status Code：400。
+kResourceNotFoundException<br>
+更新不存在的table，Http Status Code：400。
+kAccessDeniedException<br>
+请求未包含Authorization信息或者信息不正确，Http Status Code：400。
+
 
 
