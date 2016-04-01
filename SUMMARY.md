@@ -32,7 +32,7 @@
    * [GetRow](getrow.md)
    * [PutRow](putrow.md)
    * [UpdateRow](updaterow.md)
-   * DeleteRow
+   * [DeleteRow](deleterow.md)
    * BatchGetRow
    * BatchPutRow
    * Scan
