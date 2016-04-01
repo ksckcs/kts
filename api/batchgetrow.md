@@ -1,18 +1,21 @@
 ## BatchGetRow
 批量读取一个或者多个表中的若干行数据。BatchGetRow请求可以视为多个GetRow操
-作集合，各个操作独立执行，独立返回结果，独立计算服务能力消耗单位。与执行大量的GetRow操作相比，使用BatchGetRow操作可以有效减少请求的响应时间，提高数据的读取速率。
-	一次BatchGetRow操作最多能够获取16MB的数据(最大100行数据)。
-	Request协议
+作集合，各个操作独立执行，独立返回结果，独立计算服务能力消耗单位。与执行大量的GetRow操作相比，使用BatchGetRow操作可以有效减少请求的响应时间，提高数据的读取速率。<br>
+一次BatchGetRow操作最多能够获取16MB的数据(最大100行数据)。
+
+**Request协议**
+
 ```
 message BatchGetRowRequest {
-required string table_name;
-repeated String columns_to_get;
-optional bool is_strong_consistent_read;
-required repeated GetRowsRequest rows;
+  required string table_name;
+  repeated String columns_to_get;
+  optional bool is_strong_consistent_read;
+  required repeated GetRowsRequest rows;
 }
 ```
-	Request参数
-	table_name
+
+**Request参数**
+* **table_name**<br>
 类型: string
 描述: 该表的表名
 	columns_to_get
