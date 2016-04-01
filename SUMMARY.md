@@ -25,7 +25,7 @@
 * API参考手册
    * [API](api.md)
    * [数据类型](shu_ju_lei_xing.md)
-   * 错误码
+   * [错误码](cuo_wu_ma.md)
    * HTTP协议
 * SDK使用手册
    * [KTS Java Client使用手册](kts_java_clientshi_yong_shou_ce.md)
