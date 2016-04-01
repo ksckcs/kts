@@ -24,7 +24,7 @@
 * [常见问题](chang_jian_wen_ti.md)
 * API参考手册
    * [API](api.md)
-   * CreateTable
+   * [CreateTable](createtable.md)
    * DeleteTable
    * UpdateTable
    * DescribeTable
