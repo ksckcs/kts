@@ -29,7 +29,7 @@
    * [UpdateTable](updatetable.md)
    * [DescribeTable](describetable.md)
    * [ListTables](listtables.md)
-   * GetRow
+   * [GetRow](getrow.md)
    * PutRow
    * UpdateRow
    * DeleteRow
