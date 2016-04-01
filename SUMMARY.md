@@ -26,7 +26,7 @@
    * [API](api.md)
    * [CreateTable](createtable.md)
    * [DeleteTable](deletetable.md)
-   * UpdateTable
+   * [UpdateTable](updatetable.md)
    * DescribeTable
    * ListTables
    * GetRow
