@@ -25,7 +25,7 @@
 * API参考手册
    * [API](api.md)
    * [CreateTable](createtable.md)
-   * DeleteTable
+   * [DeleteTable](deletetable.md)
    * UpdateTable
    * DescribeTable
    * ListTables
