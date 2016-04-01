@@ -24,6 +24,18 @@
 * [常见问题](chang_jian_wen_ti.md)
 * API参考手册
    * [API](api.md)
+   * CreateTable
+   * DeleteTable
+   * UpdateTable
+   * DescribeTable
+   * ListTables
+   * GetRow
+   * PutRow
+   * UpdateRow
+   * DeleteRow
+   * BatchGetRow
+   * BatchPutRow
+   * Scan
    * [数据类型](shu_ju_lei_xing.md)
    * 错误码
    * HTTP协议
