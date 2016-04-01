@@ -11,6 +11,7 @@ message DeleteTableRequest {
 **Request参数**
 
 * table_name
+
 说明：需要删除的表名。<br>
 类型：String。<br>
 长度限制：[3,255]。<br>
@@ -25,6 +26,7 @@ message DeleteTableResponse {
 ** Response参数**
 
 * table_description
+
 说明：代表table的属性信息。<br>
 类型：TableDescription。<br>
 Required：否。<br>
