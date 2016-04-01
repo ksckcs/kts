@@ -54,8 +54,7 @@ message GetRowResponse {
 Required：是。<br>
 如果该行不存在，primary_key和attribute_columns均为空。
 
-* consumed_capacity
-
+* consumed_capacity<br>
 说明：本次操作消耗的服务能力单元。<br>
 类型：ConsumedCapacity。<br>
 Required：是。<br>
