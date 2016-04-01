@@ -24,18 +24,6 @@
 * [常见问题](chang_jian_wen_ti.md)
 * API参考手册
    * [API](api.md)
-   * [CreateTable](createtable.md)
-   * [DeleteTable](deletetable.md)
-   * [UpdateTable](updatetable.md)
-   * [DescribeTable](describetable.md)
-   * [ListTables](listtables.md)
-   * [GetRow](getrow.md)
-   * [PutRow](putrow.md)
-   * [UpdateRow](updaterow.md)
-   * [DeleteRow](deleterow.md)
-   * [BatchGetRow](batchgetrow.md)
-   * [BatchPutRow](batchputrow.md)
-   * [Scan](scan.md)
    * [数据类型](shu_ju_lei_xing.md)
    * 错误码
    * HTTP协议
