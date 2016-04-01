@@ -26,8 +26,8 @@ Required：否。
 
 ```
 message ListTablesResponse {
-  required string last_evaluated_table_name;
-  repeated string table_names;
+    required string last_evaluated_table_name;
+    repeated string table_names;
 }
 ```
 **Response参数**
