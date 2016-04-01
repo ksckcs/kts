@@ -55,13 +55,13 @@ Required：否。<br>
 
 * **Errors错误码**
 
-1. kInternalServerError<br>
-服务端发生了错误，Http Status Code：500。
-2. kLimitExceededException<br>
-并发的table操作请求超限，Http Status Code：400。
-3. kResourceInUseException<br>
-table的并发访问冲突，比如创建已经存在的表，Http Status Code：400。
-4. kAccessDeniedException<br>
-请求未包含Authorization信息或者信息不正确，Http Status Code：400。
+  1. kInternalServerError<br>
+  服务端发生了错误，Http Status Code：500。
+  2. kLimitExceededException<br>
+  并发的table操作请求超限，Http Status Code：400。
+  3. kResourceInUseException<br>
+  table的并发访问冲突，比如创建已经存在的表，Http Status Code：400。
+  4. kAccessDeniedException<br>
+  请求未包含Authorization信息或者信息不正确，Http Status Code：400。
 
 
