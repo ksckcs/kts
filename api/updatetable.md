@@ -3,6 +3,7 @@
 通过UpdateTable操作能够为指定table修改预配置的吞吐量，其中吞吐量的限制参见Table开发者文档。UpdateTable操作是一个异步操作，当table处于UPDATING状态时，仍然使用修改之前的吞吐量配置，操作完成后，table变为ACTIVE状态。UpdateTable只有对ACTIVE状态的table操作才会成功。
 
 **Request协议**
+
 ```
 message UpdateTableRequest {
     required string table_name;
