@@ -13,19 +13,19 @@ message GetRowRequest {
 ```
 **Request参数**
 
-* table_name<br>
+* **table_name**<br>
 说明：写入数据的表名。<br>
 类型：String。<br>
 长度限制：[3, 255]。<br>
 Required：是。
 
-* primary_key<br>
+* **primary_key**<br>
 说明：待查询的单行数据的主键。<br>
 类型：Column数组。<br>
 长度限制：必须包含分片键和行键。<br>
 Required：是。
 
-* columns_to_get<br>
+* **columns_to_get**<br>
 说明：待查询的列名。<br>
 类型：String数组。<br>
 长度限制：[0, 256]，如果长度为0，则返回该行的所有列；如果指定的列不存
