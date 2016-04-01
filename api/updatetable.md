@@ -35,16 +35,16 @@ message UpdateTableResponse {
 类型：TableDescription。<br>
 Required：否。
 * **Errors错误码**<br>
-  **kInternalServerError**<br>
+**kInternalServerError**<br>
 Server端发生错误，Http Status Code：500。<br>
-  **kLimitExceededException**<br>
+**kLimitExceededException**<br>
 并发的table操作请求超限，Http Status Code：400。<br>
-  **kResourceInUseException**<br>
+**kResourceInUseException**<br>
 table的并发访问冲突，比如更新CREATING或者UPDATING状态的table，Http 
 Status Code：400。<br>
-  **kResourceNotFoundException**<br>
+**kResourceNotFoundException**<br>
 更新不存在的table，Http Status Code：400。<br>
-  **kAccessDeniedException**<br>
+**kAccessDeniedException**<br>
 请求未包含Authorization信息或者信息不正确，Http Status Code：400。
 
 
