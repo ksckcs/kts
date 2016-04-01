@@ -30,18 +30,20 @@ Required：否。<br>
 类型：Column数组。<br>
 Required：否。<br>
 * **exclusive_end_key**<br>
-说明：本次范围查询的终止主键，查询结果可能包含这个主键对应的记录。
-类型：Column数组。
-Required：否。
-	limit
+说明：本次范围查询的终止主键，查询结果可能包含这个主键对应的记录。<br>
+类型：Column数组。<br>
+Required：否。<br>
+* **limit**<br>
 说明：本次范围查询最大返回行数。
 类型：int32, 必须大于0。
 Required：否。
-	condition
-说明：本次范围查询的过滤条件。
-类型：Condition。
-Required：否。
-	Response协议
+* **condition**<br>
+说明：本次范围查询的过滤条件。<br>
+类型：Condition。<br>
+Required：否。<br>
+
+**Response协议**
+
 ```
 message ScanResponse {
 repeated Row rows;
@@ -49,30 +51,32 @@ repeated Column next_start_key;
 required ConsumedCapacity consumed_capacity;
 }
 ```
-	Response参数
-	rows
-说明：本次范围查询结果集,按照行组织。
-类型：Row数组。
-Required：否。
-	last_evaluated_key
-说明：本次范围查询操作的最后一个主键。
-类型：Column。
-Required：否。
-	consumed_capacity
-说明：本次范围查询所消耗的服务能力单元。
-类型：ConsumedCapacity。
-Required：是。
-	Errors错误码
-	kInternalServerError
-Server端发生错误，Http Status Code：500。
-	kProvisionedThroughputExceededException
+
+**Response参数**
+
+* **rows**<br>
+说明：本次范围查询结果集,按照行组织。<br>
+类型：Row数组。<br>
+Required：否。<br>
+* **last_evaluated_key**<br>
+说明：本次范围查询操作的最后一个主键。<br>
+类型：Column。<br>
+Required：否。<br>
+* **consumed_capacity**<br>
+说明：本次范围查询所消耗的服务能力单元。<br>
+类型：ConsumedCapacity。<br>
+Required：是。<br>
+* **Errors错误码**<br>
+**kInternalServerError**<br>
+Server端发生错误，Http Status Code：500。<br>
+**kProvisionedThroughputExceededException**<br>
 请求量太大，超过预配置吞吐设置，SDK内部会自动负责重试，Http Status Code：
-400。
-	kResourceNotFoundException
-表不存在，或者表不是ACTIVE状态，Http Status Code: 400。
-	kAccessDeniedException
-请求未包含Authorization信息或者信息不正确，Http Status Code：400。
-	kThrottlingException
+400。<br>
+**kResourceNotFoundException**<br>
+表不存在，或者表不是ACTIVE状态，Http Status Code: 400。<br>
+**kAccessDeniedException**<br>
+请求未包含Authorization信息或者信息不正确，Http Status Code：400。<br>
+**kThrottlingException**<br>
 服务器繁忙，无法响应请求，Http Status Code：400。
 
 
