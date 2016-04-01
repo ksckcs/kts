@@ -7,9 +7,9 @@
 
 ```
 message CreateTableRequest {
-  required string table_name;
-  required repeated ColumnSchema primary_key;
-  required ProvisionedThroughput provisioned_throughtput;
+    required string table_name;
+    required repeated ColumnSchema primary_key;
+    required ProvisionedThroughput provisioned_throughtput;
 }
 ```
 
