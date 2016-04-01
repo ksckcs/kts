@@ -46,9 +46,9 @@ Required：否。<br>
 
 ```
 message ScanResponse {
-repeated Row rows;
-repeated Column next_start_key;
-required ConsumedCapacity consumed_capacity;
+    repeated Row rows;
+    repeated Column next_start_key;
+    required ConsumedCapacity consumed_capacity;
 }
 ```
 
