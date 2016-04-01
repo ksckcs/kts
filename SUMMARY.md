@@ -33,7 +33,7 @@
    * [PutRow](putrow.md)
    * [UpdateRow](updaterow.md)
    * [DeleteRow](deleterow.md)
-   * BatchGetRow
+   * [BatchGetRow](batchgetrow.md)
    * BatchPutRow
    * Scan
    * [数据类型](shu_ju_lei_xing.md)
