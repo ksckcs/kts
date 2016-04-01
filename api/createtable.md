@@ -56,7 +56,7 @@ Required：否。<br>
 * **Errors错误码**
 
 1. kInternalServerError<br>
-服务端发生了错误，Http Status Code：500。
+服务端发生了错误，Http Status Code：500。<br>
 2. kLimitExceededException<br>
 并发的table操作请求超限，Http Status Code：400。
 3. kResourceInUseException<br>
