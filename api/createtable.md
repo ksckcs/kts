@@ -13,7 +13,7 @@ message CreateTableRequest {
 }
 ```
 
-* Request参数
+* **Request参数**
 
 * table_name
 
