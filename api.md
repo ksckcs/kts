@@ -7,8 +7,6 @@
 * [UpdateRow](./api/updaterow.md)
 * [DeleteRow](./api/deleterow.md)
 
-
-
 **多行数据操作**
 
 * [BatchGetRow](./api/batchgetrow.md)
