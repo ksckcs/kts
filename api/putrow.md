@@ -12,30 +12,30 @@ message PutRowRequest {
 ```
 **Request参数**
 * table_name<br>
-	说明：写入数据的表名。<br>
-	类型：String。<br>
-	长度限制：[3, 255]。<br>
-	Required：是。<br>
+说明：写入数据的表名。<br>
+类型：String。<br>
+长度限制：[3, 255]。<br>
+Required：是。<br>
 * row<br>
-	说明：写入的行数据。<br>
-	类型：Row<br>
-	长度限制：必须包含主键列。<br>
-	Required：是。<br>
+说明：写入的行数据。<br>
+类型：Row<br>
+长度限制：必须包含主键列。<br>
+Required：是。<br>
 * condition<br>
-	说明：写入数据的条件。<br>
-	类型：Condition。<br>
-	Required：否。<br>
+说明：写入数据的条件。<br>
+类型：Condition。<br>
+Required：否。<br>
 **Response协议**
 ```
 message PutRowResponse {
-  required ConsumedCapacity consumed_capacity;
+    required ConsumedCapacity consumed_capacity;
 }
 ```
 **Response参数**
 * consumed_capacity<br>
-	说明：本次操作消耗的服务能力单元。<br>
-	类型：ConsumedCapacity。<br>
-	Required：是。<br>
+说明：本次操作消耗的服务能力单元。<br>
+类型：ConsumedCapacity。<br>
+Required：是。<br>
 * Errors错误码<br>
   1. kInternalServerError<br>
 Server端发生错误，Http Status Code：500。<br>
