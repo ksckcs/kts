@@ -15,23 +15,20 @@ message CreateTableRequest {
 
 **Request参数**
 
-* **table_name**
-
+* **table_name**<br>
 说明：表名。<br>
 类型：String。<br>
 长度限制：[3, 255]。<br>
 Required：是。<br>
 
-* **primary_key**
-
+* **primary_key**<br>
 说明：表的主键，由一个必需的partition key和一个可选的row key组成。<br>
 数组中第一个值为partition key，第二个为row key（可选）<br>
 类型：ColumnDescription的数组。
 长度限制：[1, 2]。<br>
 Required：是。<br>
 
-* **provisioned_throughtput**
-
+* **provisioned_throughtput**<br>
 说明：代表预配置的读和写吞吐量，根据设计，能够不受限制地扩展。然而预
 配置吞吐量的初始大小是有一定限制的，详情见Table系统开发者文档。并且
 能够通过UpdateTable操作来修改。<br>
@@ -47,21 +44,19 @@ message CreateTableResponse {
 
 **Response参数**
 
-* **table_description**
-
+* **table_description**<br>
 说明：代表table的属性信息。<br>
 类型：TableDescription。<br>
 Required：否。<br>
 
-* **Errors错误码**
-
-  1. kInternalServerError<br>
-  服务端发生了错误，Http Status Code：500。
-  2. kLimitExceededException<br>
-  并发的table操作请求超限，Http Status Code：400。
-  3. kResourceInUseException<br>
-  table的并发访问冲突，比如创建已经存在的表，Http Status Code：400。
-  4. kAccessDeniedException<br>
-  请求未包含Authorization信息或者信息不正确，Http Status Code：400。
+* **Errors错误码**<br>
+**kInternalServerError**<br>
+服务端发生了错误，Http Status Code：500。<br>
+**kLimitExceededException**<br>
+并发的table操作请求超限，Http Status Code：400。<br>
+**kResourceInUseException**<br>
+table的并发访问冲突，比如创建已经存在的表，Http Status Code：400。<br>
+**kAccessDeniedException**<br>
+请求未包含Authorization信息或者信息不正确，Http Status Code：400。
 
 
