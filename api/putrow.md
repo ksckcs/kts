@@ -10,7 +10,9 @@ message PutRowRequest {
     optional Condition condition;
 }
 ```
+
 **Request参数**
+
 * table_name<br>
 说明：写入数据的表名。<br>
 类型：String。<br>
@@ -25,13 +27,17 @@ Required：是。<br>
 说明：写入数据的条件。<br>
 类型：Condition。<br>
 Required：否。<br>
+
 **Response协议**
+
 ```
 message PutRowResponse {
     required ConsumedCapacity consumed_capacity;
 }
 ```
+
 **Response参数**
+
 * consumed_capacity<br>
 说明：本次操作消耗的服务能力单元。<br>
 类型：ConsumedCapacity。<br>
