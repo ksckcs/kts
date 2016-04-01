@@ -29,7 +29,7 @@ message DeleteTableResponse {
 
 说明：代表table的属性信息。<br>
 类型：TableDescription。<br>
-Required：否。<br>
+Required：否。
 * Errors错误码
   1. kInternalServerError<br>
 Server端发生错误，Http Status Code：500。
