@@ -20,7 +20,7 @@
    * [计费详解](ji_fei_xiang_jie.md)
    * 价格总览
 * [最佳实践](zui_jia_shi_jian.md)
-* 服务限制
+* [服务限制](fu_wu_xian_zhi.md)
 * [常见问题](chang_jian_wen_ti.md)
 * API参考手册
    * [API](api.md)
