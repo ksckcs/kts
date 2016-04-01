@@ -14,7 +14,7 @@
 * [BatchGetRow](./api/batchgetrow.md)
 * [BatchPutRow](./api/batchputrow.md)
 
-**表操作：**
+**表操作**
 
 * [CreateTable](./api/createtable.md)
 * [ListTables](./api/listtables.md)
