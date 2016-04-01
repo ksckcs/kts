@@ -27,7 +27,7 @@
    * [CreateTable](createtable.md)
    * [DeleteTable](deletetable.md)
    * [UpdateTable](updatetable.md)
-   * DescribeTable
+   * [DescribeTable](describetable.md)
    * ListTables
    * GetRow
    * PutRow
