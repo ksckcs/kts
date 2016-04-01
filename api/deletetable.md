@@ -10,14 +10,14 @@ message DeleteTableRequest {
 ```
 **Request参数**
 
-* table_name
-
+* **table_name**<br>
 说明：需要删除的表名。<br>
 类型：String。<br>
 长度限制：[3,255]。<br>
 Required：是。
 
 **Response协议**
+
 ```
 message DeleteTableResponse {
     optional TableDescription table_description;
@@ -25,20 +25,19 @@ message DeleteTableResponse {
 ```
 ** Response参数**
 
-* table_description
-
+* **table_description**<br>
 说明：代表table的属性信息。<br>
 类型：TableDescription。<br>
 Required：否。
-* Errors错误码
-  1. kInternalServerError<br>
-Server端发生错误，Http Status Code：500。
-  2. kLimitExceededException<br>
-并发的table操作请求超限，Http Status Code：400。
-  3. kResourceInUseException<br>
+* **Errors错误码**<br>
+**kInternalServerError**<br>
+Server端发生错误，Http Status Code：500。<br>
+**kLimitExceededException**<br>
+并发的table操作请求超限，Http Status Code：400。<br>
+**kResourceInUseException**<br>
 table的并发访问冲突，比如删除CREATING或者UPDATING状态的table，
-Http Status Code：400
-  4. kResourceNotFoundException<br>
-删除不存在的table，Http Status Code：400
-  5. kAccessDeniedException<br>
+Http Status Code：400<br>
+**kResourceNotFoundException**<br>
+删除不存在的table，Http Status Code：400<br>
+**kAccessDeniedException**<br>
 请求未包含Authorization信息或者信息不正确，Http Status Code：400。
