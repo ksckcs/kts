@@ -18,7 +18,7 @@
 * [购买指南](gou_mai_zhi_nan.md)
    * [计量说明](ji_liang_shuo_ming.md)
    * [计费详解](ji_fei_xiang_jie.md)
-   * 价格总览
+   * [价格总览](jia_ge_zong_lan.md)
 * [最佳实践](zui_jia_shi_jian.md)
 * [服务限制](fu_wu_xian_zhi.md)
 * [常见问题](chang_jian_wen_ti.md)
