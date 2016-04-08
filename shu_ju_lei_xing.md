@@ -90,7 +90,8 @@ kDelete = 2;
 }
 ```
 枚举类型，其中kPut表示插入一列或者覆盖该列的数据；kDelete表示删除该列的数据。 
-3.5	ColumnUpdate
+
+**ColumnUpdate**
 ```
 message ColumnUpdate {
     required string column_name = 1;
