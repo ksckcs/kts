@@ -79,7 +79,7 @@ Required：是。<br>
 * **column_value**<br>
 说明：列值。<br>
 类型：ColumnValue。<br>
-Required：是。<br>
+Required：是。
 
 **ActionType**
 
