@@ -32,7 +32,7 @@ enum ColumnType {
 ```
 枚举类型，用于表示系统支持的数据类型。
 
-**ColumnValue**
+<h3 id="2">**ColumnValue**</h3>
 
 ```
 message ColumnValue {
