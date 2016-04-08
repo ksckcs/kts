@@ -33,7 +33,7 @@ enum ColumnType {
 ```
 枚举类型，用于表示系统支持的数据类型。
 
-<h3 id="2">ColumnValue</h3>
+<span id="2">ColumnValue</span>
 
 ```
 message ColumnValue {
@@ -62,7 +62,7 @@ message ColumnValue {
 * **binary_value**<br>
 说明：该列的列值，只有在column_type为kBinary时才有效。
 
-<h3 id="3">Column</h3>
+<span id="3">Column</span>
 
 ```
 message Column {
