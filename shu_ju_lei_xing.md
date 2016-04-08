@@ -83,7 +83,7 @@ Required：是。<br>
 类型：ColumnValue。<br>
 Required：是。
 
-**ActionType**
+<span id="ActionType">ActionType</span>
 
 ```
 enum ActionType {
