@@ -1,21 +1,21 @@
 # 数据类型
 
-ColumnType
-ColumnValue
-Column
-ActionType
-ColumnUpdate
-Row
-Condition
-CompareType
-ConsumedCapacity
-ProvisionedThroughtput
-TableStatus
-TableDescription
-GetRowsRequest
-GetRowsResponse
-WriteRowsRequest
-WriteRowsResponse
+[ColumnType]()
+[ColumnValue]()
+[Column]()
+[ActionType]()
+[ColumnUpdate]()
+[Row]()
+[Condition]()
+[CompareType]()
+[ConsumedCapacity]()
+[ProvisionedThroughtput]()
+[TableStatus]()
+[TableDescription]()
+[GetRowsRequest]()
+[GetRowsResponse]()
+[WriteRowsRequest]()
+[WriteRowsResponse]()
 
 
 **ColumnType**
