@@ -30,7 +30,9 @@ enum ColumnType {
 } 
 ```
 枚举类型，用于表示系统支持的数据类型。
-3.2	ColumnValue
+
+**ColumnValue**
+
 ```
 message ColumnValue {
     required ColumnType column_type = 1;
@@ -42,39 +44,43 @@ message ColumnValue {
     optional bytes bytes_value = 7;
 }
 ```
-	用于表示一列的列值，根据列的类型，有且只有一个value被设置。
-	column_type
+用于表示一列的列值，根据列的类型，有且只有一个value被设置。
+* **column_type**<br>
 说明：列的数据类型。
-	boolean_value
+* **boolean_value**<br>
 说明：该列的列值，只有在column_type为kBooolean时才有效。
-	int32_value
+* **int32_value**<br>
 说明：该列的列值，只有在column_type为kInt32时才有效。
-	int64_value
+* **int64_value**<br>
 说明：该列的列值，只有在column_type为kInt64时才有效。
-	double_value
+* **double_value**<br>
 说明：该列的列值，只有在column_type为kDouble时才有效。
-	string_value
+* **string_value**<br>
 说明：该列的列值，只有在column_type为kString时才有效。
-	binary_value
+* **binary_value**<br>
 说明：该列的列值，只有在column_type为kBinary时才有效。
-3.3	Column
+
+**Column**
+
 ```
 message Column {
     required string column_name = 1;
     required ColumnValue column_value = 2;
 }
 ```
+
 表示一列数据name/vaue对。
-	column_name
-说明：列名，在table内必须唯一。
-类型：String。
-长度限制：[1, 65536]。
-Required：是。
-	column_value
-说明：列值。
-类型：ColumnValue。
-Required：是。
-3.4	ActionType
+* **column_name**<br>
+说明：列名，在table内必须唯一。<br>
+类型：String。<br>
+长度限制：[1, 65536]。<br>
+Required：是。<br>
+* **column_value**<br>
+说明：列值。<br>
+类型：ColumnValue。<br>
+Required：是。<br>
+
+**ActionType**
 ```
 enum ActionType {
 kPut = 1;
