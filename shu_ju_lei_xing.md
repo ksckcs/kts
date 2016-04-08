@@ -300,7 +300,9 @@ message WriteRowsRequest {
 ```
 在BatchWriteRow操作中，对某一个表要进行的更新的集合。
 
+
 **WriteRowsResponse**
+
 ```
 message WriteRowsResponse {
     required int64 log_id = 1;
