@@ -100,13 +100,13 @@ message ColumnUpdate {
 }
 ```
 在UpdateRow中，表示更新一列的信息。
-* column_name<br>
-说明：该列的列名。
-长度限制: [3, 65536]。
-* action<br>
-说明：对该列的更新方式：kPut，kDelete。
-* column_value<br>
-说明：该列更新后的列值，在type为kPut时有效。
+* **column_name**<br>
+说明：该列的列名。<br>
+长度限制: [3, 65536]。<br>
+* **action**<br>
+说明：对该列的更新方式：kPut，kDelete。<br>
+* **column_value**<br>
+说明：该列更新后的列值，在type为kPut时有效。<br>
 
 **Row**
 
@@ -116,10 +116,11 @@ message Row {
     repeated Column attribute_columns;
 }
 ```
+
 表示一行数据。
-	primary_key
+* primary_key<br>
 说明：主键数据。
-	attribute_columns
+* attribute_columns<br>
 说明：属性列数组。
 3.7	Condition
 ```
