@@ -1,6 +1,6 @@
 # 数据类型
 
-* [ColumnType](#1)
+* [ColumnType](#ColumnType)
 * [ColumnValue](#2)
 * [Column](#3)
 * [ActionType](#4)
