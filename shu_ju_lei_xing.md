@@ -313,7 +313,7 @@ message WriteRowsResponse {
 }
 ```
 在BatchWriteRow操作的返回消息中，表示一个操作的结果。
-* unprocessed_rows<br>
+* **unprocessed_rows**<br>
 描述: 由于吞吐量限制或者系统繁忙等原因，Batch请求中某些请求没有被处理，unprocessed_rows中包含所有未处理的行的集合。
-* processed<br>
+* **processed**<br>
 描述: 如果WriteRowsRequest请求的中Put、Update、Delete操作带有Condition，而且所有Condition都成立，那么processed值为true，否则为false。如果WriteRowsRequest中的请求不带任何condition, 那么processed的值没有任何实际意义。
