@@ -275,18 +275,20 @@ optional ConsumedCapacity consumed_capacity = 7;
 }
 ```
 在BatchGetRow操作的返回消息中，表示一个表的数据结果集。
-	code
-类型: int32
-描述: 该行操作是否成功。若为0，则该行读取成功，否则该行读取失败，row无效。
-	consumed_capacity
-类型: ConsumedCapacity
-描述: 该行操作消耗的服务能力单元。
-	rows
-类型: Row
-描述: 该行需要返回的列数据集合。
-	unprocessed_rows
+* code<br>
+类型: int32<br>
+描述: 该行操作是否成功。若为0，则该行读取成功，否则该行读取失败，row无效。<br>
+* consumed_capacity<br>
+类型: ConsumedCapacity<br>
+描述: 该行操作消耗的服务能力单元。<br>
+* rows<br>
+类型: Row<br>
+描述: 该行需要返回的列数据集合。<br>
+* unprocessed_rows<br>
 描述: 由于吞吐量限制或者系统繁忙等原因，Batch请求中某些请求没有被处理，unprocessed_rows中包含所有未处理的行的集合
-3.15	WriteRowsRequest
+
+**WriteRowsRequest**
+
 ```
 message WriteRowsRequest {
     required int64 log_id = 1;
