@@ -62,7 +62,7 @@ message ColumnValue {
 * **binary_value**<br>
 说明：该列的列值，只有在column_type为kBinary时才有效。
 
-<h3 id="3">**Column**</h3>
+<h3 id="3">Column</h3>
 
 ```
 message Column {
