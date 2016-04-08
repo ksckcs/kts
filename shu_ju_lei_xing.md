@@ -1,7 +1,7 @@
 # 数据类型
 
 * [ColumnType](#ColumnType)
-* [ColumnValue](#2)
+* [ColumnValue](#ColumnValue)
 * [Column](#3)
 * [ActionType](#4)
 * [ColumnUpdate](#5)
