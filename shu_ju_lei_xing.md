@@ -2,8 +2,8 @@
 
 * [ColumnType](#ColumnType)
 * [ColumnValue](#ColumnValue)
-* [Column](#3)
-* [ActionType](#4)
+* [Column](#Column)
+* [ActionType](#ActionType)
 * [ColumnUpdate](#5)
 * [Row](#6)
 * [Condition](#7)
