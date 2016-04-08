@@ -20,6 +20,7 @@
 
 
 <h3 id="1">ColumnType</h3>
+
 ```
 enum ColumnType {
   kBoolean = 0;
@@ -32,7 +33,7 @@ enum ColumnType {
 ```
 枚举类型，用于表示系统支持的数据类型。
 
-<h3 id="2">**ColumnValue**</h3>
+<h3 id="2">ColumnValue</h3>
 
 ```
 message ColumnValue {
