@@ -275,16 +275,16 @@ optional ConsumedCapacity consumed_capacity = 7;
 }
 ```
 在BatchGetRow操作的返回消息中，表示一个表的数据结果集。
-* code<br>
+* **code**<br>
 类型: int32<br>
 描述: 该行操作是否成功。若为0，则该行读取成功，否则该行读取失败，row无效。<br>
-* consumed_capacity<br>
+* **consumed_capacity**<br>
 类型: ConsumedCapacity<br>
 描述: 该行操作消耗的服务能力单元。<br>
-* rows<br>
+* **rows**<br>
 类型: Row<br>
 描述: 该行需要返回的列数据集合。<br>
-* unprocessed_rows<br>
+* **unprocessed_rows**<br>
 描述: 由于吞吐量限制或者系统繁忙等原因，Batch请求中某些请求没有被处理，unprocessed_rows中包含所有未处理的行的集合
 
 **WriteRowsRequest**
@@ -299,20 +299,21 @@ message WriteRowsRequest {
 }
 ```
 在BatchWriteRow操作中，对某一个表要进行的更新的集合。
-3.16	WriteRowsResponse
+
+**WriteRowsResponse**
 ```
 message WriteRowsResponse {
-required int64 log_id = 1;
-required int32 code = 2;
-required string msg = 3;
-optional string table_name = 4;
-optional WriteRowsRequest unprocessed_rows = 5;
-optional ConsumedCapacity consumed_capacity = 6;
-optional bool processed = 7;
+    required int64 log_id = 1;
+    required int32 code = 2;
+    required string msg = 3;
+    optional string table_name = 4;
+    optional WriteRowsRequest unprocessed_rows = 5;
+    optional ConsumedCapacity consumed_capacity = 6;
+    optional bool processed = 7;
 }
 ```
 在BatchWriteRow操作的返回消息中，表示一个操作的结果。
-	unprocessed_rows
+* unprocessed_rows<br>
 描述: 由于吞吐量限制或者系统繁忙等原因，Batch请求中某些请求没有被处理，unprocessed_rows中包含所有未处理的行的集合。
-	processed
+* processed<br>
 描述: 如果WriteRowsRequest请求的中Put、Update、Delete操作带有Condition，而且所有Condition都成立，那么processed值为true，否则为false。如果WriteRowsRequest中的请求不带任何condition, 那么processed的值没有任何实际意义。
