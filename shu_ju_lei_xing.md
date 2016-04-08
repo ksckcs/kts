@@ -171,7 +171,8 @@ message ConsumedCapacity {
 * **capacity_units**<br>
 说明：本次操作所消耗的容量单位。
 
-** ProvisionedThroughtput
+** ProvisionedThroughtput**
+
 
 ```
 message ProvisionedThroughput {
