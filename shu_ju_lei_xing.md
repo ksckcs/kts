@@ -4,22 +4,22 @@
 * [ColumnValue](#ColumnValue)
 * [Column](#Column)
 * [ActionType](#ActionType)
-* [ColumnUpdate](#5)
-* [Row](#6)
-* [Condition](#7)
-* [CompareType](#8)
-* [ConsumedCapacity](#9)
-* [ProvisionedThroughtput](#10)
-* [TableStatus](#11)
-* [TableDescription](#12)
-* [GetRowsRequest](#13)
-* [GetRowsResponse](#14)
-* [WriteRowsRequest](#15)
-* [WriteRowsResponse](#16)
+* [ColumnUpdate](#ColumnUpdate)
+* [Row](#Row)
+* [Condition](#Condition)
+* [CompareType](#CompareType)
+* [ConsumedCapacity](#ConsumedCapacity)
+* [ProvisionedThroughtput](#ProvisionedThroughtput)
+* [TableStatus](#TableStatus)
+* [TableDescription](#TableDescription)
+* [GetRowsRequest](#GetRowsRequest)
+* [GetRowsResponse](#GetRowsResponse)
+* [WriteRowsRequest](#WriteRowsRequest)
+* [WriteRowsResponse](#WriteRowsResponse)
 
 
 
-<span id="ColumnType">ColumnType</span>
+<span id="ColumnType">**ColumnType**</span>
 
 ```
 enum ColumnType {
@@ -33,7 +33,7 @@ enum ColumnType {
 ```
 枚举类型，用于表示系统支持的数据类型。
 
-<span id="ColumnValue">ColumnValue</span>
+<span id="ColumnValue">**ColumnValue**</span>
 
 ```
 message ColumnValue {
@@ -62,7 +62,7 @@ message ColumnValue {
 * **binary_value**<br>
 说明：该列的列值，只有在column_type为kBinary时才有效。
 
-<span id="Column">Column</span>
+<span id="Column">**Column**</span>
 
 ```
 message Column {
@@ -83,7 +83,7 @@ Required：是。<br>
 类型：ColumnValue。<br>
 Required：是。
 
-<span id="ActionType">ActionType</span>
+<span id="ActionType">**ActionType**</span>
 
 ```
 enum ActionType {
@@ -93,7 +93,7 @@ kDelete = 2;
 ```
 枚举类型，其中kPut表示插入一列或者覆盖该列的数据；kDelete表示删除该列的数据。 
 
-**ColumnUpdate**
+**ColumnUpdate**<span id=""></span>
 ```
 message ColumnUpdate {
     required string column_name = 1;
@@ -110,7 +110,7 @@ message ColumnUpdate {
 * **column_value**<br>
 说明：该列更新后的列值，在type为kPut时有效。<br>
 
-**Row**
+<span id="Row">**Row**</span>
 
 ```
 message Row {
@@ -125,7 +125,7 @@ message Row {
 * **attribute_columns**<br>
 说明：属性列数组。
 
-**Condition**
+<span id="Condition">**Condition**</span>
 
 ```
 message Condition {
@@ -138,17 +138,16 @@ message Condition {
 
 Condition用于实现查询过滤器和实现条件写入功能，Condition既可以用于属性列，也可以用于主键列。
 
-**primary_key**
-
-说明：行主键
-* column_name
-说明：列名
-* compare_type
-说明：过滤器的比较方法。
-* value
+* **primary_key**<br>
+说明：行主键<br>
+* **column_name**<br>
+说明：列名<br>
+* **compare_type**<br>
+说明：过滤器的比较方法。<br>
+* **value**<br>
 说明：待比较的value列表。
 
-**CompareType**
+<span id="CompareType">**CompareType**</span>
 
 ```
 enum CompareType {
@@ -163,7 +162,7 @@ kNoOp= 6;
 ```
 Condition 或者Filter的操作符
 
-**ConsumedCapacity**
+<span id="ConsumedCapacity">**ConsumedCapacity**</span>
 
 ```
 message ConsumedCapacity {
@@ -173,7 +172,7 @@ message ConsumedCapacity {
 * **capacity_units**<br>
 说明：本次操作所消耗的容量单位。
 
-** ProvisionedThroughtput**
+<span id="ProvisionedThroughtput">**ProvisionedThroughtput**</span>
 
 
 ```
@@ -189,7 +188,7 @@ message ProvisionedThroughput {
 * **write_capacity_units**<br>
 说明：每秒能够执行写请求所消耗的最大单位。
 
-**TableStatus**
+<span id="TableStatus">**TableStatus**</span>
 
 ```
 enum TableStatus {
@@ -202,7 +201,7 @@ enum TableStatus {
 ```
 枚举类型，用于表示table的数状态：
 
-**TableDescription**
+<span id="TableDescription">**TableDescription**</span>
 ```
 message TableDescription {
     required string table_name;
@@ -245,7 +244,7 @@ Required：否。<br>
 说明：table的总大小，单位是字节，这个值不能实时反映当前的表容量，系统会每6小时进行更新。<br>
 类型：int64。<br>
 
-**GetRowsRequest**
+<span id="GetRowsRequest">**GetRowsRequest**</span>
 
 ```
 message GetRowsRequest {
@@ -265,7 +264,7 @@ message GetRowsRequest {
 长度限制：必须包含分片键和行键。<br>
 Required：是。
 
-**GetRowsResponse**
+<span id="GetRowsResponse">**GetRowsResponse**</span>
 ```
 message GetRowsResponse {
     required int64 log_id = 1;
@@ -290,7 +289,7 @@ message GetRowsResponse {
 * **unprocessed_rows**<br>
 描述: 由于吞吐量限制或者系统繁忙等原因，Batch请求中某些请求没有被处理，unprocessed_rows中包含所有未处理的行的集合
 
-**WriteRowsRequest**
+<span id="WriteRowsRequest">WriteRowsRequest</span>
 
 ```
 message WriteRowsRequest {
@@ -304,7 +303,7 @@ message WriteRowsRequest {
 在BatchWriteRow操作中，对某一个表要进行的更新的集合。
 
 
-**WriteRowsResponse**
+<span id="WriteRowsResponse">WriteRowsResponse</span>
 
 ```
 message WriteRowsResponse {
