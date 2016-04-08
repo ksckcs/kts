@@ -18,7 +18,7 @@ WriteRowsRequest
 WriteRowsResponse
 
 
-3.1	ColumnType
+**ColumnType**
 ```
 enum ColumnType {
   kBoolean = 0;
