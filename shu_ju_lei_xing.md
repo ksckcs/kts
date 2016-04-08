@@ -256,12 +256,13 @@ message GetRowsRequest {
 ```
 
 在BatchGetRow操作中，表示要查询的一行信息。
-	primary_key
-	说明：待查询的单行数据的主键。
-	类型：Column数组。
-	长度限制：必须包含分片键和行键。
-	Required：是。
-3.14	GetRowsResponse
+* primary_key<br>
+说明：待查询的单行数据的主键。<br>
+类型：Column数组。<br>
+长度限制：必须包含分片键和行键。<br>
+Required：是。
+
+**GetRowsResponse**
 ```
 message GetRowsResponse {
 required int64 log_id = 1;
