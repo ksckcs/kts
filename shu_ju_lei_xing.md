@@ -100,14 +100,16 @@ message ColumnUpdate {
 }
 ```
 在UpdateRow中，表示更新一列的信息。
-	column_name
+* column_name<br>
 说明：该列的列名。
 长度限制: [3, 65536]。
-	action
+* action<br>
 说明：对该列的更新方式：kPut，kDelete。
-	column_value
+* column_value<br>
 说明：该列更新后的列值，在type为kPut时有效。
-3.6	Row
+
+**Row**
+
 ```
 message Row {
     required repeated Column primary_key;
