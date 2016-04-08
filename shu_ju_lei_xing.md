@@ -254,6 +254,7 @@ message GetRowsRequest {
     optional Filter filter = 6;
 }
 ```
+
 在BatchGetRow操作中，表示要查询的一行信息。
 	primary_key
 	说明：待查询的单行数据的主键。
