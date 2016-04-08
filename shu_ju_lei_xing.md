@@ -70,6 +70,7 @@ message Column {
 ```
 
 表示一列数据name/vaue对。
+
 * **column_name**<br>
 说明：列名，在table内必须唯一。<br>
 类型：String。<br>
@@ -81,6 +82,7 @@ Required：是。<br>
 Required：是。<br>
 
 **ActionType**
+
 ```
 enum ActionType {
 kPut = 1;
