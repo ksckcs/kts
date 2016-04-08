@@ -266,13 +266,13 @@ Required：是。
 **GetRowsResponse**
 ```
 message GetRowsResponse {
-required int64 log_id = 1;
-required int32 code = 2;
-required string msg = 3;
-optional string table_name = 4;
-repeated Row rows = 5;
-optional GetRowsRequest unprocessed_rows = 6;
-optional ConsumedCapacity consumed_capacity = 7;
+    required int64 log_id = 1;
+    required int32 code = 2;
+    required string msg = 3;
+    optional string table_name = 4;
+    repeated Row rows = 5;
+    optional GetRowsRequest unprocessed_rows = 6;
+    optional ConsumedCapacity consumed_capacity = 7;
 }
 ```
 在BatchGetRow操作的返回消息中，表示一个表的数据结果集。
