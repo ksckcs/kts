@@ -133,16 +133,21 @@ message Condition {
     optional ColumnValue value = 4;
 }
 ```
+
 Condition用于实现查询过滤器和实现条件写入功能，Condition既可以用于属性列，也可以用于主键列。
-	primary_key
+
+**primary_key**
+
 说明：行主键
-	column_name
+* column_name
 说明：列名
-	compare_type
+* compare_type
 说明：过滤器的比较方法。
-	value
+* value
 说明：待比较的value列表。
-3.8	CompareType
+
+**CompareType**
+
 ```
 enum CompareType {
 kLess = 0;
@@ -155,88 +160,98 @@ kNoOp= 6;
 }
 ```
 Condition 或者Filter的操作符
-3.9	ConsumedCapacity
+
+**ConsumedCapacity**
+
 ```
 message ConsumedCapacity {
     required int64 capacity_units = 1;
 }
 ```
-	capacity_units
+* **capacity_units**<br>
 说明：本次操作所消耗的容量单位。
-3.10	ProvisionedThroughtput
+
+** ProvisionedThroughtput
+
 ```
 message ProvisionedThroughput {
     optional int64 read_capacity_units = 1;
     optional int64 write_capacity_units = 2;
 }
 ```
+
 描述table的预配置读和写操作的吞吐量。
-	read_capacity_units
+* **read_capacity_units**<br>
 说明：每秒能够执行读请求所消耗的最大单位。
-	write_capacity_units
+* **write_capacity_units**<br>
 说明：每秒能够执行写请求所消耗的最大单位。
-3.11	TableStatus
+
+**TableStatus**
+
 ```
 enum TableStatus {
-kCreatingTable = 1;
-kUpdatingTable = 2;
-kDeletingTable = 3;
-kActiveTable = 4;
-kInActiveTable = 5;
+    kCreatingTable = 1;
+    kUpdatingTable = 2;
+    kDeletingTable = 3;
+    kActiveTable = 4;
+    kInActiveTable = 5;
 }
 ```
 枚举类型，用于表示table的数状态：
-3.12	TableDescription
+
+**TableDescription**
 ```
 message TableDescription {
-required string table_name;
-required repeated ColumnSchema primary_key;
-required string creation_date_time；
-required TableStatus table_status
-ProvisionedThroughput provisioned_throughtput;
-long item_count;
-long table_size_count
+    required string table_name;
+    required repeated ColumnSchema primary_key;
+    required string creation_date_time；
+    required TableStatus table_status
+    ProvisionedThroughput provisioned_throughtput;
+    long item_count;
+    long table_size_count
 }
 ```
 描述table的结构信息。
-	table_name
-说明：table的名称。
-类型：String。
-长度限制：[3, 255]。
-Required：是。
-	primary_key
-说明：table的主键结构，由一个必须的partition key和一个可选的row key组成，数组第一项是partition key，第二项是row key如果有的话。
-类型：Column数组。
-长度限制: 数组长度最小为1，最大为2。
-Required：是。
-	creation_date_time
-说明：table的创建时间，遵循TODO格式。
-类型：String。
-Required：是。
-	table_status
-说明：table的当前状态: { kCreating, kUpdating, kDeleting, kActive }。
-类型：TableStatus。
-Required：是。
-	provisioned_throughput
-说明：table的预配置吞吐信息。
-类型：ProvisionedThroughput。
-Required：否。
-	item_count
-说明：table的记录（行）数目，这个值不能实时反映当前的表容量，系统会每6小时进行更新。
-类型：int64。
-Required：否。
-	table_size_bytes
-说明：table的总大小，单位是字节，这个值不能实时反映当前的表容量，系统会每6小时进行更新。
-类型：int64。
-3.13	GetRowsRequest
+* table_name<br>
+说明：table的名称。<br>
+类型：String。<br>
+长度限制：[3, 255]。<br>
+Required：是。<br>
+* primary_key<br>
+说明：table的主键结构，由一个必须的partition key和一个可选的row key组成，数组第一项是partition key，第二项是row key如果有的话。<br>
+类型：Column数组。<br>
+长度限制: 数组长度最小为1，最大为2。<br>
+Required：是。<br>
+* creation_date_time<br>
+说明：table的创建时间，遵循TODO格式。<br>
+类型：String。<br>
+Required：是。<br>
+* table_status<br>
+说明：table的当前状态: { kCreating, kUpdating, kDeleting, kActive }。<br>
+类型：TableStatus。<br>
+Required：是。<br>
+* provisioned_throughput
+说明：table的预配置吞吐信息。<br>
+类型：ProvisionedThroughput。<br>
+Required：否。<br>
+* item_count<br>
+说明：table的记录（行）数目，这个值不能实时反映当前的表容量，系统会每6小时进行更新。<br>
+类型：int64。<br>
+Required：否。<br>
+* table_size_bytes
+说明：table的总大小，单位是字节，这个值不能实时反映当前的表容量，系统会每6小时进行更新。<br>
+类型：int64。<br>
+
+**GetRowsRequest**
+
 ```
 message GetRowsRequest {
-required int64 log_id = 1;
-required string table_name = 2;
-repeated PrimaryKey primary_keys = 3;
-repeated string column_names = 4;
-optional bool is_strong_consistent_read = 5 [default = false];
-optional Filter filter = 6;
+    required int64 log_id = 1;
+    required string table_name = 2;
+    repeated PrimaryKey primary_keys = 3;
+    repeated string column_names = 4;
+    optional bool is_strong_consistent_read = 5 [default = false];
+    optional Filter filter = 6;
 }
 ```
 在BatchGetRow操作中，表示要查询的一行信息。
