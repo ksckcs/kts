@@ -19,7 +19,7 @@
 
 
 
-<span id="1">ColumnType</span>
+<span id="ColumnType">ColumnType</span>
 
 ```
 enum ColumnType {
