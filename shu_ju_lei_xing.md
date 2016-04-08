@@ -1,6 +1,6 @@
 # 数据类型
 
-[ColumnType]()
+[ColumnType](#1)
 [ColumnValue]()
 [Column]()
 [ActionType]()
@@ -18,7 +18,7 @@
 [WriteRowsResponse]()
 
 
-**ColumnType**
+<h3 id="1">**ColumnType**</h3>
 ```
 enum ColumnType {
   kBoolean = 0;
