@@ -1,21 +1,22 @@
 # 数据类型
 
-[ColumnType](#1)
-[ColumnValue]()
-[Column]()
-[ActionType]()
-[ColumnUpdate]()
-[Row]()
-[Condition]()
-[CompareType]()
-[ConsumedCapacity]()
-[ProvisionedThroughtput]()
-[TableStatus]()
-[TableDescription]()
-[GetRowsRequest]()
-[GetRowsResponse]()
-[WriteRowsRequest]()
-[WriteRowsResponse]()
+* [ColumnType](#1)
+* [ColumnValue]()
+* [Column]()
+* [ActionType]()
+* [ColumnUpdate]()
+* [Row]()
+* [Condition]()
+* [CompareType]()
+* [ConsumedCapacity]()
+* [ProvisionedThroughtput]()
+* [TableStatus]()
+* [TableDescription]()
+* [GetRowsRequest]()
+* [GetRowsResponse]()
+* [WriteRowsRequest]()
+* [WriteRowsResponse]()
+
 
 
 <h3 id="1">**ColumnType**</h3>
