@@ -118,11 +118,13 @@ message Row {
 ```
 
 表示一行数据。
-* primary_key<br>
+* **primary_key**<br>
 说明：主键数据。
-* attribute_columns<br>
+* **attribute_columns**<br>
 说明：属性列数组。
-3.7	Condition
+
+**Condition**
+
 ```
 message Condition {
     optional PrimaryKey primary_key = 1;
