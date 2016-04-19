@@ -1,4 +1,4 @@
-# 数据类型
+## 数据类型
 
 * [ColumnType](#ColumnType)
 * [ColumnValue](#ColumnValue)
