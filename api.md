@@ -10,7 +10,7 @@
 **多行数据操作**
 
 * [BatchGetRow](./api/batchgetrow.md)
-* [BatchPutRow](./api/batchputrow.md)
+* [BatchwriteRow](./api/batchputrow.md)
 * [scan](./api/scan.md)
 
 **表操作**
