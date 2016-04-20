@@ -26,11 +26,11 @@ Required：是。<br>
 长度限制：[1, 256]。<br>
 Required：否。<br>
 * **inclusive_start_key**<br>
-说明：本次范围查询的起始主键，查询的结果一定不包含这个主键对应的记录。<br>
+说明：本次范围查询的起始主键，查询的结果可能包含这个主键对应的记录。<br>
 类型：Column数组。<br>
 Required：否。<br>
 * **exclusive_end_key**<br>
-说明：本次范围查询的终止主键，查询结果可能包含这个主键对应的记录。<br>
+说明：本次范围查询的终止主键，查询结果一定不包含这个主键对应的记录。<br>
 类型：Column数组。<br>
 Required：否。<br>
 * **limit**<br>
