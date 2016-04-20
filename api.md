@@ -17,6 +17,6 @@
 
 * [CreateTable](./api/createtable.md)
 * [ListTables](./api/listtables.md)
-* [DeleteTable](./api/deletetable.md)
+* [DeleteTable](./api/deletetable.md)s
 * [UpdateTable](./api/updatetable.md)
-* [DescribeTable](./api/describetable.md)
+* [DescribeTable](./api/describetable.md)s
