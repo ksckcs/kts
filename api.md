@@ -11,6 +11,7 @@
 
 * [BatchGetRow](./api/batchgetrow.md)
 * [BatchPutRow](./api/batchputrow.md)
+* [scan](./api/scan.md)
 
 **表操作**
 
